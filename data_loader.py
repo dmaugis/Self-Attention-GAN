@@ -36,7 +36,7 @@ class Data_Loader():
         return dataset
 
     def load_off(self):
-        transforms = self.transform(False, True, True, False)
+        transforms = self.transform(True, True, True, False)
         dataset = dsets.ImageFolder(self.path+'/off', transform=transforms)
         return dataset
 
